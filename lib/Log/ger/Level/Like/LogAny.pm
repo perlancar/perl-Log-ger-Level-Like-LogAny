@@ -6,20 +6,20 @@ package Log::ger::Level::Like::LogAny;
 use Log::ger ();
 
 %Log::ger::Levels = (
-    emergency => 0.1,
-    alert     => 0.2,
-    critical  => 1,
-    crit      => 1, # = critical
-    fatal     => 1, # = critical
-    error     => 2,
-    err       => 2, # = error
-    warning   => 3,
-    warn      => 3, # = warning
-    notice    => 3.5,
-    info      => 4,
-    inform    => 4, # = info
-    debug     => 5,
-    trace     => 6,
+    emergency => 5,
+    alert     => 6,
+    critical  => 10,
+    crit      => 10, # = critical
+    fatal     => 10, # = critical
+    error     => 20,
+    err       => 20, # = error
+    warning   => 30,
+    warn      => 30, # = warning
+    notice    => 35,
+    info      => 40,
+    inform    => 40, # = info
+    debug     => 50,
+    trace     => 60,
 );
 
 %Log::ger::Level_Aliases = (
@@ -39,20 +39,20 @@ use Log::ger ();
 
 This module changes the L<Log::ger> levels to:
 
-    emergency => 0.1,
-    alert     => 0.2,
-    critical  => 1,
-    crit      => 1, # = critical
-    fatal     => 1, # = critical
-    error     => 2,
-    err       => 2, # = error
-    warning   => 3,
-    warn      => 3, # = warning
-    notice    => 3.5,
-    info      => 4,
-    inform    => 4, # = info
-    debug     => 5,
-    trace     => 6,
+    emergency => 5,
+    alert     => 6,
+    critical  => 10,
+    crit      => 10, # = critical
+    fatal     => 10, # = critical
+    error     => 20,
+    err       => 20, # = error
+    warning   => 30,
+    warn      => 30, # = warning
+    notice    => 35,
+    info      => 40,
+    inform    => 40, # = info
+    debug     => 50,
+    trace     => 60,
 
 Note that the exact numerical constants differ from definitions in
 L<Log::Any::Adapter::Util>. The numbers are adjusted so things like
